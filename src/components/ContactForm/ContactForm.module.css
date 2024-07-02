@@ -1,0 +1,88 @@
+/* components/ContactForm.module.css */
+.contactForm {
+  padding: 10px 40px;
+  width: 700px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm .inputContainer {
+  margin-bottom: 15px;
+}
+
+.contactForm label {
+  font-weight: bold;
+  color: #555;
+}
+
+.contactForm .inputField {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  width: calc(100% - 20px);
+}
+
+.contactForm .inputField:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.contactForm button {
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.contactForm button:hover {
+  background-color: #45a049;
+}
+
+.contactForm .error {
+  color: #d32f2f;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.contactForm .success {
+  color: #388e3c;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+
+@media (max-width: 600px) {
+  .contactForm {
+    width: 100%;
+    
+    padding: 10px;
+  }
+
+}
