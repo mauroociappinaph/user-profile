@@ -19,4 +19,5 @@ a {
 a:hover {
     text-decoration: none;
     color: #45a049;
+    transition: 0.5s;
 }
